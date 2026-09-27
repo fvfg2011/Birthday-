@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>С днём рождения</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="particles" id="particles"></div>
+
+<div class="stage active" id="stage-intro">
+  <h1 class="line serif" id="line1"></h1>
+  <h1 class="line serif big" id="line2" style="margin-top:.6rem;"></h1>
+</div>
+
+<div class="stage" id="stage-main">
+  <div class="msg">
+    <div class="name serif" id="mainName"></div>
+    <p id="mainText"></p>
+    <button class="btn" id="btnMainContinue">Дальше</button>
+  </div>
+</div>
+
+<div class="stage" id="stage-envelope">
+  <div class="starfield" id="envStars"></div>
+  <div class="planet planet-ring"></div>
+  <div class="planet planet-moon"></div>
+
+  <p class="lead" id="envLead"></p>
+
+  <div class="env2-wrap" id="envWrap">
+    <div class="env2-float">
+      <div class="envelope2" id="envelope">
+        <div class="env2-fold env2-top"></div>
+        <div class="env2-fold env2-left"></div>
+        <div class="env2-fold env2-right"></div>
+        <div class="env2-fold env2-bottom"></div>
+        <div class="env2-name" id="envName"></div>
+        <div class="env2-seal" id="envSeal"><span id="envSealLetter"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <p class="hint" id="envHint"></p>
+</div>
+
+<div class="stage" id="stage-letter">
+  <div class="letter-card" id="letterCard">
+    <p id="letterText"></p>
+    <div class="sign" id="letterSign"></div>
+  </div>
+    <button class="btn" id="btnLetterContinue" style="margin-top:1.6rem;"></button>
+</div>
+
+<div class="stage" id="stage-photos">
+  <div class="photo-title" id="photosTitle"></div>
+  <div id="photoList"></div>
+  <button class="btn" id="btnPhotosContinue" style="margin-top:.6rem;"></button>
+</div>
+
+<div class="stage" id="stage-final">
+  <h1 class="serif" id="finalLine1"></h1>
+  <div class="sub" id="finalLine2"></div>
+</div>
+
+<div class="stage" id="stage-galaxy">
+  <div class="galaxy-wrap" id="galaxyWrap">
+    <div class="galaxy-scene" id="galaxyScene">
+      <canvas id="galaxyCanvas"></canvas>
+      <div class="galaxy-core"></div>
+      <div class="orbit-labels" id="orbitLabels"></div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
